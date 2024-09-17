@@ -1,5 +1,199 @@
-<html>
-<body>
-<h2> the website. </h2>
-</body>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Nilaksh</title>
+
+    <meta name="author" content="Nilaksh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Nilaksh
+                </p>
+                <p>
+                  I'm a final year dual degree (bachelors and masters) student at <a href="https://www.iitkgp.ac.in/">Indian Institute Of Technology, Kharagpur</a>, majoring in Electronics and Electrical Communication Engineering with a specialization in Vision. I'm also minoring in Computer Science. Currently I am working on vision-based RL with <a href="https://saumikb.github.io/">Prof. Saumik Bhattacharya</a> for my master's thesis.
+                </p>
+                <p>
+                  Previously, I was a reseach intern at <a href="https://www.epfl.ch/labs/claire/">CLAIRE, EPFL</a>, where I worked on multi-objective RL under <a href="https://www.caglarg.com/">Prof. Caglar Gulcehre</a>. I was also a reseach intern at <a href="https://www.aamirahmad.de/">FRPG</a> where I worked on multi-task adaptive RL under <a href="https://ps.is.mpg.de/person/aahmad">Prof. Aamir Ahmad</a>. I was also fortunate to work with <a href="https://www.shishirny.com/">Prof. Shishir Kolathaya</a>,  <a href="https://cps.iisc.ac.in/">RBCCPS IISc</a>, on barrier funstions inspired reward shaping.
+                </p>
+                <p>
+                  At IIT Kharagpur I've worked on NLP and formal language with <a href="https://cse.iitkgp.ac.in/~aritrah/">Prof. Aritra Hazra</a>, and on defense against SSL backdoor attacks with <a href="http://www.facweb.iitkgp.ac.in/~smsh/">Prof. Somesh Kumar</a> for my bachelor's thesis. 
+                </p>
+
+                <p style="text-align:center">
+                  <a href="mailto:nilaksh404@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="resources/nilaksh_resume.pdf">CV</a> &nbsp;/&nbsp;
+                  <!-- <a href="resources/bio.txt">Bio</a> &nbsp;/&nbsp; -->
+                  <!-- <a href="https://scholar.google.com/citations?hl=">Scholar</a> &nbsp;/&nbsp; -->
+                  <a href="https://github.com/hskalin/">Github</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/nilaksh-%E2%80%8E-27291b201/">LinkedIn</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/pfp.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/pfp.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research Interests</h2>
+                <p>
+                  I'm interested in reinforcement learning, computer vision, efficient deep learning and robotics. I hope to work on research problems that deeper my current understanding of these subjects, while also prompting me to think in new ways.                
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <h2>Publications</h2>
+              </td>
+            </tr>
+
+            <tr onmouseout="backdoor_stop()" onmouseover="backdoor_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='backdoor_image'>
+                    <img src='images/poison.png' width=100%>
+                  </div>
+                  <img src='images/backdoor_vis.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function backdoor_start() {
+                    document.getElementById('backdoor_image').style.opacity = "1";
+                  }
+
+                  function backdoor_stop() {
+                    document.getElementById('backdoor_image').style.opacity = "0";
+                  }
+                  backdoor_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2403.15918">
+                  <span class="papertitle">Towards Adversarial Robustness And Backdoor Mitigation in SSL</span>
+                </a>
+                <br>
+            <strong>Nilaksh*</strong>, Aryan Satpathy*, Dhruva Rajwade*, Somesh Kumar
+                <br>
+                <em>Under review at NeurIPS Workshop on Self‑Supervised Learning</em>, 2024
+                <br>
+                <a href="https://arxiv.org/abs/2403.15918">arXiv</a>
+                /
+                <a href="https://github.com/Aryan-Satpathy/Backdoor">code</a>
+                <p></p>
+                <p>
+                Defense against backdoor attacks on Self-Supervised Learning in frequency space.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="adaptive_stop()" onmouseover="adaptive_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='adaptive_image'>
+                  <img src="images/blimp_after.png"  width=100%>
+
+                  </div>
+                  <img src='images/blimp.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function adaptive_start() {
+                    document.getElementById('adaptive_image').style.opacity = "1";
+                  }
+        
+                  function adaptive_stop() {
+                    document.getElementById('adaptive_image').style.opacity = "0";
+                  }
+                  adaptive_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2404.18713">
+                  <span class="papertitle">Adaptive Reinforcement Learning for Robot Control</span>
+                </a>
+                <br>
+                Yu Tang Liu, <strong>Nilaksh</strong>, Aamir Ahmad
+                <br>
+                <em>Full paper will appear in IEEE International Conference on Intelligent Robots and Systems (IROS)</em>, 2024
+                <br>
+                <a href="https://arxiv.org/abs/2404.18713">paper</a>
+                /
+                <a href="https://github.com/robot-perception-group/adaptive_agent/">code</a>
+                <p></p>
+                <p>
+                  A novel adaptive agent that leverages transfer learning techniques to dynamically adapt policy in response to different tasks and environmental conditions
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="barrier_stop()" onmouseover="barrier_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='barrier_image'>
+                    <img src='images/ant.gif' width=100%>
+                  </div>
+                  <img src='images/bfplot.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function barrier_start() {
+                    document.getElementById('barrier_image').style.opacity = "1";
+                  }
+        
+                  function barrier_stop() {
+                    document.getElementById('barrier_image').style.opacity = "0";
+                  }
+                  kbf_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2403.01410">
+                  <span class="papertitle">Barrier Functions Inspired Reward Shaping for Reinforcement Learning</span>
+                </a>
+                <br>
+                <strong>Nilaksh</strong>, Abhishek Ranjan, Shreenabh Agrawal, Aayush Jain, Pushpak Jagtap, Shishir Kolathaya
+                <br>
+                <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024
+                <br>
+                <a href="https://arxiv.org/abs/2403.01410">paper</a>
+                /
+                <a href="https://github.com/Safe-RL-IISc/barrier_shaping">code</a>
+                <p></p>
+                <p>
+                  A novel safety-oriented reward-shaping framework inspired by barrier functions, offering simplicity and ease of implementation across various environments and tasks.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:center;font-size:small;">
+                  This website's template is taken from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
